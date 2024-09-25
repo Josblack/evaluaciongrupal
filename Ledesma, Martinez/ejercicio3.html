@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var i=0
+    var sum=0
+    var can=0
+    var cantm=0
+    while(i<5){
+        temp=parseInt(prompt("Ingrese temperatura"))
+        if (temp>0){
+            sum=sum+temp
+        }
+        if (temp<0){
+            can++
+        }
+        if (temp>30){
+            cantm=cantm+temp
+        }
+        i++
+    }
+    prom=sum/5
+    document.write("La cantidad de temperaturas bajo cero: " +can)
+    document.write("La cantidad de temperaturas mayor a 30 grandos: " +cantm)
+    document.write("Promedio de las temperaturas: " +prom)
+    document.write("La suma de temperaturas positivas es: " +sum)
+</script>

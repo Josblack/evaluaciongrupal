@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var sum=0
+    var cont=0
+    var cont1=0
+    alt=[1.60, 1.80, 2.00, 3.00, 1.67]
+    for (i=0; i<5; i++){
+        sum=sum+alt[i]
+    }
+    prom=sum/5
+    for (o=0; o<5; o++){
+        if (alt[o]>prom){
+            cont++
+        }
+
+    }
+    for (p=0; p<5; p++){
+        if (alt[p]<prom){
+            cont1++
+        }
+
+    }
+    document.write("El promedio de la altura es: " +prom)
+    document.write("La cantidad de personas que son mayor altura que el promedio es: " +cont)
+    document.write("La cantidad de personas que son menor altura que el promedio es: " +cont1)
+</script>
